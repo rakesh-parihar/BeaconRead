@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Beacon Simulator Demo</string>
+    <string name="str_msg">This app needs access to your location.</string>
+    <string name="str_transmit">Transmit</string>
+    <string name="str_receive">Receive</string>
+    <string name="str_enter_uuid">Enter UUID</string>
+    <string name="str_add">Add</string>
+    <string name="str_start_scanning">Start Scanning</string>
+    <string name="str_reset">Reset</string>
+    <string name="str_start_transmitting">Start Transmitting</string>
+    <string name="str_set_major_value">Set Major Value</string>
+    <string name="msg_no_support">Device doesn\'t support this feature!</string>
+    <string name="str_ok">Okay</string>
+
+
+    <string-array name="beacon_type">
+        <item>ALTBEACON</item>
+        <item>IBEACON</item>
+        <item>EDDYSTONE  TLM</item>
+        <item>EDDYSTONE  UID</item>
+        <item>EDDYSTONE  URL</item>
+    </string-array>
+</resources>

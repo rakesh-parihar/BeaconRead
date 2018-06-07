@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/cap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_set_major_value"
+        android:layout_above="@+id/stepperMajor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"/>
+
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/stepperMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cap3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:np_width="150dp"
+        app:np_height="60dp"
+        app:np_dividerColor="@color/colorPrimary"
+        app:np_max="100"
+        app:np_min="0"
+        app:np_orientation="horizontal"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="30sp"
+        app:np_textColor="@color/colorPrimary"
+        app:np_textSize="20sp"
+        app:np_value="0" />
+
+    <TextView
+        android:id="@+id/cap3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStart"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_start_transmitting"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        />
+
+</RelativeLayout>
